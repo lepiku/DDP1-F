@@ -8,15 +8,6 @@ panjang = int(input('Masukkan panjang keliling gambar: '))
 warna = input('Masukkan warna gambar: ')
 isi = input('Apakah Anda ingin mengisi warna ke dalam gambar? ')
 
-# menulis branding dan copyright
-turtle.penup()
-turtle.goto(0, 200)
-turtle.write('TurtleTRON-3999 v2', font=('Arial', 12, 'normal'))
-turtle.goto(-200, -200)
-turtle.write('Copyright Asdos DDP1-F', font=('Arial', 12, 'normal'))
-turtle.goto(0, 0)
-turtle.pendown()
-
 # menentukan warna garis
 if warna == 'merah':
     warna = 'red'
@@ -28,7 +19,7 @@ elif warna == 'oranye':
     warna = 'orange'
 elif warna == 'hitam':
     warna = 'black'
-elif warna= 'biru':
+elif warna == 'biru':
     warna = 'blue'
 turtle.color(warna)
 
@@ -52,6 +43,15 @@ else:
 # akhir dari mengisi warna
 if isi == 'ya':
     turtle.end_fill()
+
+# menulis branding dan copyright
+turtle.color('black')
+turtle.penup()
+turtle.goto(0, 200)
+turtle.write('TurtleTRON-3999 v2', font=('Arial', 12, 'normal'))
+turtle.goto(-200, -200)
+turtle.write('Copyright Asdos DDP1-F', font=('Arial', 12, 'normal'))
+turtle.pendown()
 
 # menyembunyikan panah
 turtle.hideturtle()
