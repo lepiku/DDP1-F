@@ -19,15 +19,18 @@ turtle.pendown()
 
 # menentukan warna garis
 if warna == 'merah':
-    turtle.color('red')
+    warna = 'red'
 elif warna == 'hijau':
-    turtle.color('green')
+    warna = 'green'
 elif warna == 'kuning':
-    turtle.color('yellow')
+    warna = 'yellow'
 elif warna == 'oranye':
-    turtle.color('orange')
+    warna = 'orange'
 elif warna == 'hitam':
-    turtle.color('black')
+    warna = 'black'
+elif warna= 'biru':
+    warna = 'blue'
+turtle.color(warna)
 
 # mulai mengisi warna
 if isi == 'ya':
