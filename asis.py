@@ -1,4 +1,3 @@
-'''
 n = 100000
 
 L = []
@@ -11,8 +10,15 @@ print(L)
 print(O)
 print(O == L)
 
+
+
+
+'''
 After swap1, numList: [1, 2, 5, 4, 3]
 After swap2, numList: [1, 2, 3, 4, 5]
+'''
+
+
 
 
 lst = [2.1, 4, "string", 8, 1]
@@ -30,6 +36,10 @@ for i in lst:
         print("i: " + str(i))
 print("a: " + str(a))
 
+
+
+
+
 import string
 
 def hitung(kalimat):
@@ -46,7 +56,7 @@ def hitung(kalimat):
             counter[kata] = 1
         else:
             counter[kata] += 1
-    
+
     # untuk sort dari kecil ke besar
     output = list(counter.items())
     output.sort(key=lambda x: x[1])
@@ -54,44 +64,32 @@ def hitung(kalimat):
 
 print(hitung('Saya jalan-jalan ke pinggir jalan,.'))
 
+
+
+
+
 def sumAll(filename):
     infile = open(filename, 'r')
     sums = 0
 
     isi_file = infile.read()
     for char in isi_file:
-    
+
         if char.isnumeric():
             sums += int(char)
-        
+
         # bisa juga pake try
-        
+
         try:
             sums += int(char)
         except:
             pass
-        
+
 
     infile.close()
     return sums
 
 print("sumall input.txt =", sumAll('input.txt'))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -116,7 +114,10 @@ class Lingkaran(Elips):
 c1 = Lingkaran(7)
 print(c1.getRadius())
 print(c1.getLuas())
-'''
+
+
+
+
 class A:
     def __init__(self, i = 10):
         print("calling init in class A")
@@ -143,4 +144,5 @@ def main():
     print(b.i) #Line 3
     print(b.j) #Line 4
     print(isinstance(b,object)) #Line 5
+
 main()
